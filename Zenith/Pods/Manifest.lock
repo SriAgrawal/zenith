@@ -1,0 +1,81 @@
+PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Braintree (4.8.5):
+    - Braintree/Card (= 4.8.5)
+    - Braintree/Core (= 4.8.5)
+    - Braintree/PayPal (= 4.8.5)
+    - Braintree/UI (= 4.8.5)
+  - Braintree/Card (4.8.5):
+    - Braintree/Core
+  - Braintree/Core (4.8.5)
+  - Braintree/PayPal (4.8.5):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.8.5):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.8.5):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.8.5)
+  - Braintree/UI (4.8.5):
+    - Braintree/Card
+    - Braintree/Core
+  - CardIO (5.4.1)
+  - EstimoteSDK (4.18.0)
+  - FBSDKCoreKit (4.18.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.18.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.18.0):
+    - FBSDKCoreKit
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.3.1):
+    - GoogleMaps (= 2.3.1)
+    - GooglePlaces (= 2.3.1)
+  - GooglePlaces (2.3.1):
+    - GoogleMaps/Base (= 2.3.1)
+  - PayPal-iOS-SDK (2.17.0):
+    - PayPal-iOS-SDK/CardIO (= 2.17.0)
+    - PayPal-iOS-SDK/Core (= 2.17.0)
+  - PayPal-iOS-SDK/CardIO (2.17.0):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.17.0)
+
+DEPENDENCIES:
+  - Braintree
+  - EstimoteSDK
+  - FBSDKCoreKit (~> 4.18.0)
+  - FBSDKLoginKit (~> 4.18.0)
+  - FBSDKShareKit (~> 4.18.0)
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - PayPal-iOS-SDK
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Braintree: 12225834d0e39ffad56888756a3c0d8bda043d53
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  EstimoteSDK: a43f33e11c00c3fca824c6d33a99c6e70b558a19
+  FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
+  FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
+  FBSDKShareKit: 0b8d6cc3f103c75297eb3c62caec284a2ccf1b9e
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  GooglePlacePicker: fc3564ac7a2ce314e78e42bfc1e16822ad1e5488
+  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
+  PayPal-iOS-SDK: 849321f6214a7187ee4cc684f63fe509df4c4a36
+
+PODFILE CHECKSUM: 9d648d59a3db6b144741e773f1964ed754e6786c
+
+COCOAPODS: 1.2.1

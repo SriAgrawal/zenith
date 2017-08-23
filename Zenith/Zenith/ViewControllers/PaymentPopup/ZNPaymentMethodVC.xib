@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Itc kabel Std-Book.otf">
+            <string>ITCKabelStd-Book</string>
+        </array>
+        <array key="Itc kabel Std-Medium.otf">
+            <string>ITCKabelStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZNPaymentMethodVC" customModule="Zenith" customModuleProvider="target">
+            <connections>
+                <outlet property="cashOnDeliveryButton" destination="I1D-md-fqS" id="XXG-el-uxo"/>
+                <outlet property="paymentLabel" destination="Xyf-0d-tKR" id="2sN-xg-ZVh"/>
+                <outlet property="paymentPopupView" destination="dcb-6E-ECC" id="TVO-71-Dvn"/>
+                <outlet property="paymentViaPaypalButton" destination="x9o-LR-SBQ" id="sHY-V6-Ft3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTopConstraint" destination="lYW-v8-I3Q" id="BOY-Ak-SYa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcb-6E-ECC">
+                    <rect key="frame" x="13" y="244" width="350" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose your payment Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyf-0d-tKR">
+                            <rect key="frame" x="8" y="34" width="334" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Nmr-HU-YEz"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="318" id="aS1-94-BJa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ITCKabelStd-Medium" family="ITC Kabel Std" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9o-LR-SBQ">
+                            <rect key="frame" x="55" y="73" width="210" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="210" id="12Z-WN-Bps"/>
+                                <constraint firstAttribute="height" constant="30" id="DuX-8H-qRj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ITCKabelStd-Book" family="ITC Kabel Std" pointSize="18"/>
+                            <inset key="titleEdgeInsets" minX="47" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Pay via Paypal" image="unselect_Popup">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="select_PopUp"/>
+                            <connections>
+                                <action selector="onPayViaPaypalClick:" destination="-1" eventType="touchUpInside" id="WU5-GY-aoC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1D-md-fqS">
+                            <rect key="frame" x="45.5" y="111" width="227" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="9ca-3J-dXN"/>
+                                <constraint firstAttribute="width" constant="227" id="gqJ-HV-vuY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ITCKabelStd-Book" family="ITC Kabel Std" pointSize="18"/>
+                            <inset key="titleEdgeInsets" minX="65" minY="2" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="21" minY="2" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Cash on delivery" image="unselect_Popup">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="select_PopUp"/>
+                            <connections>
+                                <action selector="OnCashOnDeliveryClick:" destination="-1" eventType="touchUpInside" id="WRh-J9-WjD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXg-7o-Iew">
+                            <rect key="frame" x="323" y="3" width="25" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="0Zz-Ln-d9Z"/>
+                                <constraint firstAttribute="width" constant="25" id="GUj-It-VGU"/>
+                            </constraints>
+                            <state key="normal" image="cross_PopUp"/>
+                            <connections>
+                                <action selector="crossButtonClick:" destination="-1" eventType="touchUpInside" id="H0H-FL-C1r"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YN-fL-uw5">
+                            <rect key="frame" x="0.0" y="158" width="350" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="YrX-zh-cNU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfD-C9-Nt5">
+                            <rect key="frame" x="0.0" y="158" width="350" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="62" id="b1j-PJ-Der"/>
+                            </constraints>
+                            <state key="normal" title="OK"/>
+                            <connections>
+                                <action selector="okBtnAction:" destination="-1" eventType="touchUpInside" id="78l-1C-fEW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Xyf-0d-tKR" firstAttribute="leading" secondItem="dcb-6E-ECC" secondAttribute="leading" constant="8" id="0c7-kc-wPS"/>
+                        <constraint firstAttribute="bottom" secondItem="CfD-C9-Nt5" secondAttribute="bottom" id="8V2-gi-LKS"/>
+                        <constraint firstItem="I1D-md-fqS" firstAttribute="centerX" secondItem="dcb-6E-ECC" secondAttribute="centerX" constant="-16" id="CKd-6D-zRb"/>
+                        <constraint firstItem="Xyf-0d-tKR" firstAttribute="centerX" secondItem="dcb-6E-ECC" secondAttribute="centerX" id="E77-w9-9dC"/>
+                        <constraint firstItem="CfD-C9-Nt5" firstAttribute="leading" secondItem="dcb-6E-ECC" secondAttribute="leading" id="Euu-8G-tH9"/>
+                        <constraint firstItem="9YN-fL-uw5" firstAttribute="leading" secondItem="dcb-6E-ECC" secondAttribute="leading" id="IGA-hw-Sbj"/>
+                        <constraint firstAttribute="trailing" secondItem="tXg-7o-Iew" secondAttribute="trailing" constant="2" id="JFE-qX-kQO"/>
+                        <constraint firstItem="9YN-fL-uw5" firstAttribute="top" secondItem="I1D-md-fqS" secondAttribute="bottom" constant="17" id="MJi-cy-5OH"/>
+                        <constraint firstAttribute="height" constant="220" id="OmK-OD-3f7"/>
+                        <constraint firstItem="x9o-LR-SBQ" firstAttribute="centerX" secondItem="dcb-6E-ECC" secondAttribute="centerX" constant="-15" id="g3q-2h-mu9"/>
+                        <constraint firstAttribute="trailing" secondItem="CfD-C9-Nt5" secondAttribute="trailing" id="h03-c4-NoG"/>
+                        <constraint firstAttribute="trailing" secondItem="9YN-fL-uw5" secondAttribute="trailing" id="l5K-3A-EP8"/>
+                        <constraint firstAttribute="width" constant="350" id="maf-4s-2pC"/>
+                        <constraint firstItem="Xyf-0d-tKR" firstAttribute="top" secondItem="dcb-6E-ECC" secondAttribute="top" constant="34" id="szI-1X-pyK"/>
+                        <constraint firstItem="tXg-7o-Iew" firstAttribute="top" secondItem="dcb-6E-ECC" secondAttribute="top" constant="3" id="tu1-8e-n0b"/>
+                        <constraint firstItem="I1D-md-fqS" firstAttribute="top" secondItem="x9o-LR-SBQ" secondAttribute="bottom" constant="8" id="uNs-Q8-4Ng"/>
+                        <constraint firstAttribute="bottom" secondItem="I1D-md-fqS" secondAttribute="bottom" constant="79" id="zqU-GE-pbI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="0.89825021404383565" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dcb-6E-ECC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="6rU-Uj-UF7"/>
+                <constraint firstItem="dcb-6E-ECC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="0.5" id="Nb2-bF-mXS"/>
+                <constraint firstItem="dcb-6E-ECC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="244" id="lYW-v8-I3Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="72.5" y="88.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross_PopUp" width="22" height="22"/>
+        <image name="select_PopUp" width="21" height="21"/>
+        <image name="unselect_Popup" width="21" height="21"/>
+    </resources>
+</document>
